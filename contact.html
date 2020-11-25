@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="navbar" aria-label="Navigation Bar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+
+</div>
+    <br><br><br>
+    <center><h1>Contact Me</h1></center>
+    
+    <div id="contact">
+        
+        <form id="contact_form">
+            
+            
+            <label for="name">Name: </label><br><br>
+            <input type="text" id="name" name="name" pattern="[a-zA-Z ]+" required ><br><br>
+            <label for="email">Email: </label><br><br>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9@.]+" required ><br><br>
+            <label for="phone">Phone Number (No spaces):</label><br><br>
+            <input type="text" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+            <label for="gender">Gender: </label><br>
+            <input type="radio" id="gender" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="gender" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>
+            <label for="message">Message: </label><br><br>
+            <textarea id="message" name="message" rows="10" cols="25"required></textarea><br><br>
+            
+            <input type="submit" value="Contact Me">
+            
+            
+            
+        </form>
+        <p id="contact_info">
+            You can typically reach me through any of the following channels: <br><br>
+            Email: justinshi@u.northwestern.edu<br><br>
+            Instagram: @justinshi_<br><br>
+            Linkedin: Justin Shi<br><br>
+            
+        </p>
+    </div>
+    
+</body>
+</html>
+

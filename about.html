@@ -1,0 +1,105 @@
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>About</title>
+</head>
+<body>
+    <div class="navbar" aria-label="Navigation Bar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+    <br><br><br>
+    <div id="about_body">
+    <center><h1>About Me</h1></center>
+    <div class="row">
+    <div class="column">
+        <p id="about_body_text">My name is Justin. I am a Computer Science major and Business Institutions minor at Northwestern University and I will be graduating in 2023. 
+    </p><br><br>
+        <button id="resume" onclick="expandResume()"><b>Click here to see my resume</b></button>
+    </div>
+    <div class="column">
+        <img id="about_image" src="bio.png" alt='A photo of me'>
+    </div>
+    
+    
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div id="resume_text">
+        
+        <h2 id="resume_name">Justin Shi</h2>
+        <h3 id="student">Student at Northwestern University</h3>
+        <h3>Experience</h3>
+        <b><p>Intern at McKinsey Shanghai</p></b>
+        <p id="resume_time">June 2018 - August 2018</p>
+        <ul>
+        <li>Conducted market research on upcoming Chinese retail trends </li>
+            <li>Developed programs to automate prospecting process and analyze data </li>
+            <li>Researched prospects using tools such as Bloomberg machines</li>
+        </ul>
+        
+        <b><p>Intern at HSBC Shanghai</p></b>
+        <p id="resume_time">August 2019 - September 2019</p>
+        <ul>
+        <li>Acted as interpreter for client meetings and translated documents for presentation</li>
+            <li>Conducted industry research on Chinese AV industry</li>
+            <li>Researched and generated client cold call lists</li>
+        </ul>
+        <b><p>Social Media Influencer</p></b>
+        <p id="resume_time">March 2018 - Present</p>
+        <ul>
+        <li>instagram.com/fingees</li>
+            <li>Developed and executed original concepts for marketing campaigns on Instagram and other social media channels</li>
+  
+        </ul>
+        <h3>Skills</h3>
+        <ul>
+        <li>CS related skills (C, C++, Python, Java)</li>
+            <li>Design related skills (Adobe Photoshop, Illustrator)</li>
+        </ul>
+        <br>
+        <br>
+        <button id="resume" onclick="expandResume()"><b>Return to top of page</b></button>
+        
+        <br>
+        
+        
+        
+    </div>
+    </div>
+
+    
+   
+
+</body>
+    
+<script>
+    
+var expanded = false;
+function expandResume(){
+    if(expanded){
+        document.getElementById("resume_text").style.display = "none"; 
+        window.scrollBy(0, -600);
+        
+        expanded = false;
+    }
+    else{
+        document.getElementById("resume_text").style.display = "inline"; 
+        window.scrollBy(0, 600);
+        expanded = true;
+    }
+   
+    
+}
+
+
+
+    
+    
+</script>
+</html>
+
